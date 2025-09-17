@@ -65,6 +65,8 @@ class LatihanLayout extends StatelessWidget {
                   ),
                 ],),
             ),
+
+            
             Container(
               padding: EdgeInsets.all(20),
               height: 150,
@@ -82,7 +84,7 @@ class LatihanLayout extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold
                       ),),
-                      Text("Brazil",
+                      Text("Argentina",
                       style: TextStyle(
                         fontWeight: FontWeight.bold
                       )),
@@ -114,6 +116,8 @@ class LatihanLayout extends StatelessWidget {
                   ),
                 ],),
             ),
+
+            
             Container(
               padding: EdgeInsets.all(20),
               height: 150,
@@ -162,6 +166,8 @@ class LatihanLayout extends StatelessWidget {
                     ],
                   ),
                 ],),
+            ),
+            Container(
             )
           ],
         ),

@@ -2,7 +2,8 @@
 // import 'package:ashsuii_app/latihan/container.dart';
 // import 'package:ashsuii_app/latihan/kolom.dart';
 // import 'package:ashsuii_app/latihan/baris.dart';
-import 'package:ashsuii_app/latihan/kasus.dart';
+// import 'package:ashsuii_app/latihan/kasus.dart';
+import 'package:ashsuii_app/tugas/layout.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LatihanLayout(),
+      home: MyLayout(),
     );
   }
 }
