@@ -45,8 +45,7 @@ class Quiz1 extends StatelessWidget {
                   children: [
                     Container(child: Text("Next Workout"),),
                     Container(child: Text("Lets Toning and Glutes Workout"),),
-                    Container(child: Text("Next Workout"),),
-                          
+                    Container(child: Text("60 min"),),
                   ],
                 ),
               )
