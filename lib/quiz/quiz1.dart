@@ -12,7 +12,7 @@ class Quiz1 extends StatelessWidget {
           fontWeight: FontWeight.w700
         ),),
       ),
-      backgroundColor: Colors.white24,
+      backgroundColor: const Color.fromARGB(94, 158, 158, 158),
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
@@ -45,33 +45,63 @@ class Quiz1 extends StatelessWidget {
             ),
 
             Container(
-              margin: EdgeInsets.only(left: 15, right: 15, top: 15),
-              width: 500,
-              height: 100,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-              color: Colors.blue,
+              child: Stack( 
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 20, right: 20, top: 15),
+                    width: 500,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/card.jpg"),
+                      fit: BoxFit.cover
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/figure1.png"))
+                    ),
+                  )
+                ],
               ),
             ),
 
+
             Container(
+              width: 500,
+              height: 200,
               child: Row(
                 children: [
-                  Container(
-                    margin: EdgeInsets.all(20),
-                    width: 200,
-                    height: 150,
-                    color: Colors.amber,
-                    ),
 
                   Container(
                     margin: EdgeInsets.all(30),
                     width: 200,
                     height: 150,
-                    color: Colors.amber,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(image: AssetImage("img/ex3.png"))
+                    )
+                    ),
+
+                    Container(
+                    margin: EdgeInsets.all(20),
+                    width: 200,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(image: AssetImage("img/ex4.png"))
+                    )
                     ),
                 ],
               ),
             )
+
+            
           ],
         ),
       ),
