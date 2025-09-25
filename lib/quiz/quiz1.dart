@@ -12,7 +12,8 @@ class Quiz1 extends StatelessWidget {
           fontWeight: FontWeight.w700
         ),),
       ),
-      body: Container(
+      backgroundColor: Colors.white24,
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
@@ -33,6 +34,7 @@ class Quiz1 extends StatelessWidget {
                 ),
               ],
             ),
+
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
               width: 500,
@@ -47,7 +49,27 @@ class Quiz1 extends StatelessWidget {
               width: 500,
               height: 100,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-              color: Colors.amber,
+              color: Colors.blue,
+              ),
+            ),
+
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 200,
+                    height: 150,
+                    color: Colors.amber,
+                    ),
+
+                  Container(
+                    margin: EdgeInsets.all(30),
+                    width: 200,
+                    height: 150,
+                    color: Colors.amber,
+                    ),
+                ],
               ),
             )
           ],
