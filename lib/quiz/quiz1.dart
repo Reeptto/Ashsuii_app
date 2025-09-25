@@ -45,7 +45,8 @@ class Quiz1 extends StatelessWidget {
             ),
 
             Container(
-              child: Stack( 
+              child: Stack(
+                alignment: Alignment.topLeft,
                 children: [
                   Container(
                     margin: EdgeInsets.only(left: 20, right: 20, top: 15),
@@ -68,18 +69,15 @@ class Quiz1 extends StatelessWidget {
                 ],
               ),
             ),
-
-
             Container(
               width: 500,
               height: 200,
               child: Row(
                 children: [
-
                   Container(
                     margin: EdgeInsets.all(30),
                     width: 200,
-                    height: 150,
+                    height: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
@@ -90,7 +88,7 @@ class Quiz1 extends StatelessWidget {
                     Container(
                     margin: EdgeInsets.all(20),
                     width: 200,
-                    height: 150,
+                    height: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
