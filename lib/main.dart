@@ -7,7 +7,10 @@
 // import 'package:ashsuii_app/latihan/kasus2.dart';
 // import 'package:ashsuii_app/latihan/stack.dart';
 // import 'package:ashsuii_app/latihan/kasus2.dart';
-import 'package:ashsuii_app/tugas/layout2.dart';
+// import 'package:ashsuii_app/tugas/layout2.dart';
+// import 'package:ashsuii_app/latihan/page1.dart';
+// import 'package:ashsuii_app/latihan/page2.dart';
+import 'package:ashsuii_app/quiz/quiz1.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -20,7 +23,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyLayout2(),
+      // routes: {
+      //   "/" : (context) => LatihanNavigasi(),
+      //   "/halaman2" : (context) => Halaman2()
+      // },
+      home: Quiz1(),
     );
   }
 }
