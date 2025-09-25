@@ -39,9 +39,17 @@ class Quiz1 extends StatelessWidget {
               margin: EdgeInsets.only(left: 15, right: 15),
               width: 500,
               height: 200,
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-                color: Colors.purpleAccent,
-              ),
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Column(
+                  children: [
+                    Container(child: Text("Next Workout"),),
+                    Container(child: Text("Lets Toning and Glutes Workout"),),
+                    Container(child: Text("Next Workout"),),
+                          
+                  ],
+                ),
+              )
             ),
 
             Container(
@@ -71,7 +79,7 @@ class Quiz1 extends StatelessWidget {
             ),
             Container(
               width: 500,
-              height: 200,
+              height: 300,
               child: Row(
                 children: [
                   Container(
