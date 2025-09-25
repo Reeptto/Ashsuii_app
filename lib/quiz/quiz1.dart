@@ -13,21 +13,43 @@ class Quiz1 extends StatelessWidget {
         ),),
       ),
       body: Container(
-        width: double.maxFinite,
-        height: 50,
-        color: Colors.amber,
-        child: Row(
-          spacing: 350,
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
           children: [
-            
-            SizedBox(
-              child: Text("Your Program"),
+            Row(
+              children: [
+                Container(
+                  child: Text("Your Program",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800
+                  ),
+                  ),
+                ),
+                Container(
+                  child: Text("Details >", style: TextStyle(
+                    color: Colors.blue
+                  ),),
+                ),
+              ],
             ),
-            SizedBox(
-              child: Text("Details >", style: TextStyle(
-                color: Colors.blue
-              ),),
+            Container(
+              margin: EdgeInsets.only(left: 15, right: 15),
+              width: 500,
+              height: 200,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+                color: Colors.purpleAccent,
+              ),
             ),
+
+            Container(
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15),
+              width: 500,
+              height: 100,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+              color: Colors.amber,
+              ),
+            )
           ],
         ),
       ),
