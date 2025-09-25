@@ -43,9 +43,9 @@ class Quiz1 extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: Column(
                   children: [
-                    Container(child: Text("Next Workout"),),
-                    Container(child: Text("Lets Toning and Glutes Workout"),),
-                    Container(child: Text("60 min"),),
+                      Text("Next Workout"),                    
+                      Text("Lets Toning and Glutes Workout"),                    
+                      Text("60 min"),                    
                   ],
                 ),
               )
