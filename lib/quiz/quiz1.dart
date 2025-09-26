@@ -61,10 +61,53 @@ class Quiz1 extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [Colors.purple, Colors.purpleAccent, Colors.white])
                 ),
-              child: Column(
-                children: [
-                  Text("Next Workout")
-                ],
+              child: Container(
+                margin: EdgeInsets.all(25),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      // margin: EdgeInsets.all(25),
+                      child: Text("Next Workout", style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600
+                      ),),
+                    ),
+                    Container(
+                      child: Text("Lets Toning", style: TextStyle(
+                        fontSize: 36,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600
+                      ),),
+                    ),
+                    Container(
+                      child: Text("and Glutes Workout", style: TextStyle(
+                        fontSize: 36,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600
+                      ),),
+                    ),
+
+                    
+                    Row(
+                      children: [
+                        Container(
+                          child: Icon(Icons.access_time,
+                          color: Colors.white,
+                          ),
+                        ),
+                        Container(
+                          child: Text(" 60 min", style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white
+                          ),),
+                        ),
+                        
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],
