@@ -90,24 +90,56 @@ class Quiz1 extends StatelessWidget {
                     ),
 
                     
-                    Row(
-                      children: [
-                        Container(
-                          child: Icon(Icons.access_time,
-                          color: Colors.white,
+                    Container(
+                      margin: EdgeInsets.only(top: 85),
+                      child: Row(
+                        children: [
+                          Container(
+                            child: Icon(Icons.access_time,
+                            color: Colors.white,
+                            ),
                           ),
-                        ),
-                        Container(
-                          child: Text(" 60 min", style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.white
-                          ),),
-                        ),
-                        
-                      ],
+                          Container(
+                            child: Text(" 60 min", style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white
+                            ),),
+                          ),
+                          Container(
+                            width: 40,
+                            height: 40,
+                            margin: EdgeInsets.only(left: 325),
+                            child: Icon(Icons.play_arrow),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(40),
+                              color: Colors.white,
+                            ),
+                          )
+                      
+                        ],
+                      ),
                     )
                   ],
                 ),
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 15),
+              width: 500,
+              height: 150,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.white,
+              ),
+              child: Stack(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/card.jpg"))
+                    )
+                  )
+                ],
               ),
             )
           ],
