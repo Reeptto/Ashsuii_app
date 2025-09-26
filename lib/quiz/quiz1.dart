@@ -125,9 +125,9 @@ class Quiz1 extends StatelessWidget {
             ),
 
             Container(
-              margin: EdgeInsets.only(top: 15),
+              margin: EdgeInsets.only(top: 40),
               width: 500,
-              height: 150,
+              height: 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.white,
@@ -136,8 +136,20 @@ class Quiz1 extends StatelessWidget {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                      image: DecorationImage(image: AssetImage("img/card.jpg"))
+                      image: DecorationImage(image: AssetImage("img/card.jpg"),
+                        fit: BoxFit.cover
+                      )
                     )
+                  ),
+                  Positioned(
+                    child: Container(
+                      width: 500,
+                      height: 500,
+                      margin: EdgeInsets.only(right: 400),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage("img/figure1.png"))
+                      ),
+                    ),
                   )
                 ],
               ),
