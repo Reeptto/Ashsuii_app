@@ -59,7 +59,7 @@ class Quiz1 extends StatelessWidget {
                 color: Colors.purple.shade400,
                 borderRadius: BorderRadius.circular(20),
                 gradient: LinearGradient(
-                  colors: [Colors.purple, Colors.purpleAccent, Colors.white])
+                  colors: [Colors.purple, const Color.fromARGB(139, 223, 64, 251), Colors.white])
                 ),
               child: Container(
                 margin: EdgeInsets.all(25),
@@ -141,16 +141,69 @@ class Quiz1 extends StatelessWidget {
                       )
                     )
                   ),
-                  Positioned(
+                  Container(
+                    width: 500,
+                    height: 500,
+                    margin: EdgeInsets.only(right: 400),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/figure1.png"))
+                    ),
+                  ),
+                  Center(
                     child: Container(
-                      width: 500,
-                      height: 500,
-                      margin: EdgeInsets.only(right: 400),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage("img/figure1.png"))
+                      margin: EdgeInsets.only(left: 120),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            child: Text("You are doing great", style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.blue
+                            ),
+                          ),
+                        ),
+                          Text("keep it up"),
+                          Text("stick to your plan"),
+                        ],
                       ),
                     ),
                   )
+                ],
+              ),
+            ),
+            
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 40, left: 25),
+                    child: Text("Area of focus", style: TextStyle(
+                      fontSize: 20
+                    ),),
+                  ),
+                ],
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              child: Row(
+                spacing: 40,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 230,
+                    height: 200,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    width: 230,
+                    height: 200,
+                    color: Colors.white,
+                  ),
                 ],
               ),
             )
