@@ -197,12 +197,18 @@ class Quiz1 extends StatelessWidget {
                   Container(
                     width: 230,
                     height: 200,
-                    color: Colors.white,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/ex3.png")),
+                      color: Colors.white,
+                    ),
                   ),
                   Container(
                     width: 230,
                     height: 200,
-                    color: Colors.white,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage("img/ex4.png")),
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),
