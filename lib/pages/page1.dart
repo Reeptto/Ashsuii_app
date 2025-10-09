@@ -14,7 +14,6 @@ class LatihanNavigasi extends StatelessWidget {
       ),
       body: Center(
         child: Text("Halaman 1"),
-        
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
