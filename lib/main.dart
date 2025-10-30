@@ -14,24 +14,69 @@
 // import 'package:ashsuii_app/per5/state.dart';
 // import 'package:ashsuii_app/per5/list_1.dart';
 // import 'package:ashsuii_app/per5/state2.dart';
-import 'package:ashsuii_app/per6/text_box.dart';
+// import 'package:ashsuii_app/per6/text_box.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main(List<String> args) {
   runApp( MyApp() );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDark = false;
+  
+  // function untuk menyimpan data ke shared preferences
+  void simpanData()async {
+    final p = await SharedPreferences.getInstance();
+    await p.setBool("tema_gelap", isDark);
+  }
+
+  void ambilData() async {
+    final p = await SharedPreferences.getInstance();
+    setState(() {
+      isDark = p.getBool("tema_gelap") ?? false;
+    });
+  }
+  
+  void initState() {
+    super.initState();
+    ambilData();
+  } 
+
+  @override
+
   Widget build(BuildContext context) {
     return MaterialApp(
-      // routes: {
-      //   "/" : (context) => LatihanNavigasi(),
-      //   "/halaman2" : (context) => Halaman2()
-      // },
-      home: TextBoxPage(),
+      title: "Latihan Shared Preference",
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Switch Theme"),
+        ),
+        body: Center(
+          child: SwitchListTile(
+            activeThumbColor: Colors.red,
+            inactiveThumbColor: Colors.blue,
+            title: Text("Tombol tema"),
+            value: isDark, 
+            onChanged: (bool value) {
+              setState(() {
+                isDark = value ;
+              });
+              simpanData();
+          }),
+        ),
+      ),
     );
   }
 }
